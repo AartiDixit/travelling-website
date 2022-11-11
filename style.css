@@ -1,0 +1,464 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+.container{
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+}
+.header{
+    position: relative;
+    height: 95vh;
+    background: linear-gradient(rgba(236, 100, 121, 0.5),rgba(243, 92, 115, 0.5)),url("ishan-seefromthesky-Iqk8OFDJWnk-unsplash.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#bgcolor {
+    background: rgb(32, 30, 30);
+}
+.navbar::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+ .logo, .navbar a{
+    color: white;
+}
+ .logo{
+    float: left;
+    font-size: 2.5rem;
+    padding: 1rem;
+    margin-bottom: 0.5em;
+}
+.navbar  .nav-items{
+    float: right;
+    list-style: none; 
+    margin-top: 2rem;
+    }
+ .navbar .nav-item{
+    display: inline-block;
+   }
+a{
+    font-size: 1.6rem;
+    text-decoration: none;
+    letter-spacing: 0.15em;
+    padding: 1.6rem;
+    font-weight: 500;
+    margin-top: 0.5em;
+}
+.navbar a:link,
+.navbar a:visited{
+    color: #f4f4f4;
+}
+.navbar a:hover{
+    border-bottom: 1px solid white;
+    padding: 0.3rem;
+}
+.header-content{
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.header-content h1{
+    text-transform: uppercase;
+    font-size: 3rem;
+    font-weight: 700;
+    padding-bottom: 0.5em;
+    color: white;
+    letter-spacing: 0.20em;
+}
+.header-content p{
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    font-weight: 500;
+    padding-bottom: 0.5em;
+    color: white;
+}
+.btn{
+    display: inline-block;
+    font-weight: 400;
+    text-transform: uppercase;
+    padding: 1.6rem;
+    margin: 0.5em;
+    background-color: white;
+    color: rgb(12, 197, 197);
+    border-radius: 100px;
+}
+.btn:hover{
+    background-color: rgb(240, 232, 232);
+}
+.textbox .btn{
+    border: 2px solid red;
+    color: red;
+    border-radius: 1.5em;
+}
+.textbox .btn:hover{
+    background-color: #f7f4f4;
+}
+.show{
+    background: #ddd;
+    padding: 10rem;
+}
+.row{
+    height: 350px;
+    box-shadow: 0px 0px 20px 0px #aaa;
+    margin: 10rem;
+    background-color: white;
+}
+.row1 .img , .row2 .textbox{
+    float: left;
+    width: 50%;
+}
+.row2 .img , .row1 .textbox{
+    float: left;
+    width: 50%;
+}
+.row .img{
+    height: 100%;
+}
+.row .textbox{
+    height: 100%;
+    padding: 3rem;
+    font-size: 1.6rem;
+    font-weight: 500;
+
+}
+.textbox h2{
+    color: black;
+}
+.textbox p{
+    color: gray;
+}
+.row .img img{
+    display: inline;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.feature{
+    padding: 10rem;
+}
+.bigbox{
+    box-shadow: 5px 5px 20px 0px rgb(71, 70, 70);
+}
+.box{
+width: 33.33%;
+float: left;
+padding: 2rem;
+text-align: center;
+}
+.box-1, .box-3{
+    background-color: rgb(39, 34, 34);
+    color: white;
+}
+.box-2{
+    background-color: rgb(245, 46, 79);
+    color: white;
+}
+.bigbox::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.footer{
+    background: rgb(32, 30, 30);
+    color: #f4f4f4;
+    padding: 2rem;
+    text-align: center;
+    font-size: 13px;
+}
+.social-media-links i{
+    margin: 2rem;
+}
+.about{
+    padding: 5rem 0;
+}
+.about h2{
+    letter-spacing: 3px;
+    font-size: 3rem;
+    font-weight: 500;
+}
+.heading{
+    border-bottom: 5px solid #e63946; 
+}
+.container p{
+    margin: 2rem;
+    font-size: 13px;
+}
+.about-wrapper{
+    text-align: center;
+    margin-top: 2rem;
+}
+.about-wrapper .left{
+    float: left;
+    width: 50%;
+    font-size: 13px;
+}
+.about-wrapper .right{
+    float: right;
+    width: 50%;
+    font-size: 13px;
+}
+.about-wrapper::before{
+    content: '';
+    display: block;
+    clear: both;
+}
+.about-wrapper li::before{
+    content: '\2713';
+    font-weight: bold;
+    color: #e63946;
+    padding-right: 1rem;
+}
+.counts{
+    padding: 7rem;
+    margin-top: 5rem;
+}
+.countitem{
+    float: left;
+    width: 25%; 
+    text-align: center;
+}
+.counts::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.countitem span{
+    font-size: 3rem;
+    font-weight: 700;
+    color: #e63946;
+}
+.countitem p{
+    font-weight: 700;
+    color: #555;
+    font-size: 1.8rem;
+}
+.banner{
+    background-color: rgba(255, 128, 149, 0.842);
+    color: #f4f4f4;
+    padding: 2rem;
+    margin-top: 3rem;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.192);
+}
+.bleft{
+width: 60%;
+float: left;
+}
+.bright{
+width: 40%;
+float: right;
+text-align: right;
+}
+.banner p{
+    font-weight: 500;
+    font-size: 25px;
+    letter-spacing: 1px;
+    margin-top: 2rem;
+}
+
+.banner::after
+{
+    content: '';
+    display: block;
+    clear: both;
+}
+.button{
+    font-size: 2rem;
+    font-weight: 800;
+    text-align: center;
+    display: inline-block;
+    text-transform: uppercase;
+    border: 4px solid white;
+    padding:  0.3 rem 2.5rem;
+    letter-spacing: 0.5rem;
+    color: #f4f4f4;
+}
+.contactform{
+    padding: 5rem 0;
+    background: #f7f7f7;
+}
+.formwrapper::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.address{
+    height: 760px;
+    background: #fff;
+    width: 49%;
+    float: left;
+    padding: 1rem;
+}
+.formwrapper .address i{
+    display: inline-block;
+    margin-right: 1rem;
+}
+.formwrapper .address h2{
+     display: inline-block;
+     text-transform: uppercase;
+}
+
+.formwrapper .addressgroup{
+    margin-bottom: 1rem;
+}
+.formwrapper .address img{
+    max-width: 90%;
+    min-height: 40rem;
+    object-fit: cover;
+    object-position: right;
+}
+.form{
+    height: 760px;
+    font-size: 1.6rem;
+    background: #fff;
+    float: right;
+    width: 49%;
+    padding: 1rem;
+}
+.form h1::after{
+    content: '';
+    display: block;
+    border: 3px solid #ee4758;
+    width: 100%;
+}
+.formwrapper .form label{
+    display: block;
+}
+.formwrapper .form input{
+    padding: 0.5rem;
+    width: 100%;
+}.formwrapper .form .formgroup{
+    margin-bottom: 1.2rem;
+}
+.formwrapper .form label::after{
+    content: '*';
+    color: red;
+}
+.form textarea{
+    width: 100%;
+    height: 300px;
+    padding: 1rem;
+}
+.form-btn{
+    display: block;
+    margin: 0 auto;
+    padding: 0.5rem 3rem;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    background: #e63946;
+    color: #fff;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+@media (max-width: 500px){
+    html{
+        font-size: 50%;
+    }
+    .navbar .nav-items, .navbar .logo{
+        float: none;
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    .row{
+        height: auto;
+        width: 100%;
+        margin: auto;
+    }
+    .row .img,
+    .row .textbox{
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+    .feature .box{
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+    .feature .box-2,
+    .feature .box-3{
+        margin-top: 7rem;
+    }
+    .bleft,
+    .bright{
+        float: none;
+        width: 100%;
+        text-align: center;
+    }   
+    .formwrapper .address{
+      float: none;
+      width: 100%;
+      height: auto;
+    }
+}
+@media (min-width: 501px) and (max-width: 768px){
+    html{
+        font-size: 8px;
+    }
+    p{
+        font-size: 1.8rem;
+    }
+    .navbar .nav-items, .navbar .logo{
+        float: none;
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    .row{
+        height: auto;
+        width: 100%;
+        margin: auto;
+    }
+    .row .img,
+    .row .textbox{
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+    .feature .box{
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+    .feature .box-2,
+    .feature .box-3{
+        margin-top: 7rem;
+    }
+    .bleft,
+    .bright{
+        float: none;
+        width: 100%;
+        text-align: center;
+    }   
+    .formwrapper .address{
+      float: none;
+      width: 100%;
+      height: auto;
+    }
+}
+@media (min-width: 769px) and (max-width: 1200px)
+{
+    html{
+        font-size: 5px;
+    }
+}
+@media (orientation: landscape) and (max-height: 500px){
+    .header{
+        height: 90vmax;
+    }
+}
